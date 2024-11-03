@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Gerenciamento de Cinema</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="box bg-primary text-white py-3 mb-4">
+        <div class="container">
+            <h1 class="text-center">Sistema de Gerenciamento de Cinema</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#salas">Gerenciar Salas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#filmes">Gerenciar Filmes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sessoes">Gerenciar Sessões</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#venda">Venda de Ingressos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="header.html">Sair do Painel</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="salas" class="mb-5">
+            <h2>Gerenciar Salas</h2>
+            <form id="form-salas" class="form-inline">
+                <input type="text" class="form-control mr-2 mb-2" id="nomeSala" placeholder="Nome da Sala" required>
+                <input type="number" class="form-control mr-2 mb-2" id="capacidadeSala" placeholder="Capacidade" required>
+                <input type="text" class="form-control mr-2 mb-2" id="localizacaoSala" placeholder="Localização" required>
+                <button type="submit" class="btn btn-primary mb-2">Adicionar Sala</button>
+            </form>
+            <ul id="listaSalas" class="list-group"></ul>
+        </section>
+
+        <section id="filmes" class="mb-5">
+            <h2>Gerenciar Filmes</h2>
+            <form id="form-filmes" class="form-inline">
+                <input type="text" class="form-control mr-2 mb-2" id="tituloFilme" placeholder="Título do Filme" required>
+                <input type="text" class="form-control mr-2 mb-2" id="generoFilme" placeholder="Gênero" required>
+                <input type="number" class="form-control mr-2 mb-2" id="duracaoFilme" placeholder="Duração (min)" required>
+                <button type="submit" class="btn btn-primary mb-2">Adicionar Filme</button>
+            </form>
+            <ul id="listaFilmes" class="list-group"></ul>
+        </section>
+
+        <section id="sessoes" class="mb-5">
+            <h2>Gerenciar Sessões</h2>
+            <form id="form-sessoes" class="form-inline">
+                <select id="salaSelect" class="form-control mr-2 mb-2"></select>
+                <select id="filmeSelect" class="form-control mr-2 mb-2"></select>
+                <input type="datetime-local" class="form-control mr-2 mb-2" id="dataHora" required>
+                <button type="submit" class="btn btn-primary mb-2">Adicionar Sessão</button>
+            </form>
+            <ul id="listaSessoes" class="list-group"></ul>
+        </section>
+        
+        
+    </main>
+    <div class="container">
+        <h1 class="text-center">Sistema de Login</h1>
+    
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-4">
+                <div class="card p-3 mb-4">
+                    <h2>Cadastro</h2>
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="regUsername">Usuário:</label>
+                            <input type="text" class="form-control" id="regUsername" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regPassword">Senha:</label>
+                            <input type="password" class="form-control" id="regPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regRole">Função:</label>
+                            <select id="regRole" class="form-control" required>
+                                <option value="user">Usuário</option>
+                                <option value="employee">Funcionário</option>
+                                <option value="admin">Administrador</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card p-3 mb-4">
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginUsername">Usuário:</label>
+                            <input type="text" class="form-control" id="loginUsername" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Senha:</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

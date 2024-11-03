@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda de Ingressos</title>
+  
+  <!-- Adicionando Tailwind CSS via CDN -->
+  
+
+  <style>
+    /* Para garantir transições suaves nas mensagens de alerta */
+    .alert {
+      display: none;
+      transition: opacity 0.5s;
+    }
+  </style>
+</head>
+<body class="bg-neutral-900 flex items-center justify-center min-h-screen">
+
+
+    <!-- Cabeçalho -->
+   <header class=" bg-neutral-900 text-white fixed top-0 w-full z-50 box ">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <a href="header.html" class="hover:text-amber-300 text-2xl font-bold">NeoCine</a>
+        <nav>
+            <ul class="flex space-x-8">
+                <li><a href="Programacao.html" class="hover:text-amber-300">Programação</a></li>
+                <li><a href="nossasUnidades.html" class="hover:text-amber-300">Nossas Unidades</a></li>
+                <li><a href="quemSomos.html" class="hover:text-amber-300">Quem Somos</a></li>
+                <li><a href="login.html" class="hover:text-amber-300">Compra de ingresso</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-6">
+            
+        </div>
+    </div>
+</header>
+
+
+  <div class="px-2.5 bg-neutral-600 shadow-[2px_0px_20px_5px_] shadow-white rounded-lg overflow-hidden flex flex-col">
+    <h1 class="text-2xl font-bold text-center mb-6">Venda de Ingressos</h1>
+
+    <form id="form-venda" class="space-y-4">
+      <div>
+        <label for="sessaoSelect" class="block text-sm font-medium text-white">Selecione a Sessão:</label>
+        <select id="sessaoSelect" class="mt-1 block w-full p-2 border border-gray-300 rounded-md"></select>
+        <div id="capacidadeContainer" class="text-white"></div> <!-- Para exibir capacidade total e vagas disponíveis -->
+      </div>
+
+      <div>
+        <label for="quantidadeIngressos" class="block text-sm font-medium text-white">Quantidade de Ingressos:</label>
+        <input type="number" id="quantidadeIngressos" min="1" required 
+               class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+      </div>
+
+      <div>
+        <label for="tipoIngresso" class="block text-sm font-medium text-white">Tipo de Ingresso:</label>
+        <select id="tipoIngresso" class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+          <option value="meio">Meia - R$ 10,00</option>
+          <option value="inteira">Inteira - R$ 20,00</option>
+        </select>
+      </div>
+
+      <button type="submit" 
+              class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+        Comprar
+      </button>
+    </form>
+
+    <div id="resultadoVenda" class="mt-4 text-white"></div>
+
+    <div id="alertMessage" 
+         class="alert mt-4 p-3 rounded-md text-white text-center"></div>
+  </div>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="new.js"></script>
+
+</body>
+</html>

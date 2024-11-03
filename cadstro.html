@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Cinema</title>
+    <link rel="stylesheet" href="teste.css">
+    
+    <!-- Remova qualquer código JavaScript embutido daqui -->
+</head>
+<body class=" font-sans  bg-zinc-800">
+    <!-- Cabeçalho -->
+   <header class=" bg-neutral-900 text-white fixed top-0 w-full z-50 box ">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <a href="header.html" class="hover:text-amber-300 text-2xl font-bold">NeoCine</a>
+        <nav>
+            <ul class="flex space-x-8">
+                <li><a href="Programacao.html" class="hover:text-amber-300">Programação</a></li>
+                <li><a href="nossasUnidades.html" class="hover:text-amber-300">Nossas Unidades</a></li>
+                <li><a href="quemSomos.html" class="hover:text-amber-300">Quem Somos</a></li>
+                <li><a href="login.html" class="hover:text-amber-300">Compra de ingresso</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-6">
+            
+        </div>
+    </div>
+</header>
+    <!-- Espaço para evitar que o conteúdo fique atrás do cabeçalho fixo -->
+    
+
+    <!-- Seção de Cadastro -->
+    <div class="min-h-screen flex items-center justify-center  ">
+        <div class="px-2.5 bg-neutral-600 shadow-[2px_0px_20px_5px_] shadow-white rounded-lg overflow-hidden p-6 max-w-md w-full">
+            
+            <h2 class="text-2xl font-bold text-white text-center">Criar uma conta</h2>
+
+            <!-- Formulário de Cadastro -->
+            <form id="registerForm">
+                <div class="mb-4">
+                    <label for="regUsername" class="block text-white font-semibold mb-2">Nome de Usuário</label>
+                    <input type="text" id="regUsername" placeholder="Escolha um nome de usuário" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="regPassword" class="block text-white font-semibold mb-2">Senha</label>
+                    <input type="password" id="regPassword" placeholder="Escolha uma senha" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                </div>
+                <input type="hidden" id="regRole" value="user">
+                <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 rounded-lg transition duration-200">Criar Conta</button>
+            </form>
+
+            <!-- Div para exibir mensagens de feedback -->
+            <div id="message" class="mt-4 text-center text-sm"></div>
+
+            <!-- Link para Login -->
+            <p class="text-center text-white mt-4">Já tem uma conta? <a href="login.html" class="text-red-500 hover:underline">Entrar</a></p>
+        </div>
+    </div>
+<footer class=" text-white py-6  bottom-0 left-0 right-0" style="background-color: #1e1e1e;">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Cinema XYZ. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- Certifique-se de que o script.js está corretamente referenciado -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>

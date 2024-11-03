@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Login - Cinema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+     <link rel="stylesheet" href="teste.css">
+    
+</head>
+<body class="bg-zinc-800 font-sans">
+    <!-- Cabeçalho -->
+   <header class=" bg-neutral-900 text-white fixed top-0 w-full z-50 box ">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <a href="header.html" class="hover:text-amber-300 text-2xl font-bold">NeoCine</a>
+        <nav>
+            <ul class="flex space-x-8">
+                <li><a href="Programacao.html" class="hover:text-amber-300">Programação</a></li>
+                <li><a href="nossasUnidades.html" class="hover:text-amber-300">Nossas Unidades</a></li>
+                <li><a href="quemSomos.html" class="hover:text-amber-300">Quem Somos</a></li>
+                <li><a href="login.html" class="hover:text-amber-300">Compra de ingresso</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-6">
+            
+        </div>
+    </div>
+</header>
+
+    <!-- Espaço para evitar que o conteúdo fique atrás do cabeçalho fixo -->
+    
+
+    <!-- Container de Formulários -->
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 shadow-2xl5656">
+        <div >
+            <!-- Formulário de Cadastro -->
+            <div class="mb-8">
+                <form id="registerForm">
+                </form>
+                <div id="messageRegister" class="mt-4 text-center text-sm"></div>
+            </div>
+
+            <!-- Formulário de Login -->
+            <div class="px-2.5 bg-neutral-600 shadow-[2px_0px_20px_5px_] shadow-white rounded-lg overflow-hidden ">
+                <h2 class="text-2xl font-bold text-white text-center ">Login</h2>
+                <form id="loginForm">
+                    <div class="mb-2">
+                        <label for="loginUsername" class="block text-white  font-semibold mb-2">Usuário</label>
+                        <input type="text" id="loginUsername" placeholder="Digite seu usuário" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="loginPassword" class="block text-white font-semibold mb-2">Senha</label>
+                        <input type="password" id="loginPassword" placeholder="Digite sua senha" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" required>
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="rememberMe" class="mr-2">
+                            <label for="rememberMe" class="text-white">Lembrar-me</label>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="px-20 bg-red-500 hover:bg-red-600 text-white font-bold py-2 rounded-lg transition duration-200 mb-2">Entrar</button>
+                    <a href="cadstro.html"><button type="button" class="px-10 bg-red-500 hover:bg-red-600 text-white font-bold py-2 rounded-lg ">cadastre-se</button></a>
+                    
+                </form>
+                
+                <div id="messageLogin" class="mt-4 text-center text-sm"></div>
+                
+            </div>
+        </div>
+        
+   <footer class=" text-white py-6 absolute  bottom-0 left-0 right-0" style="background-color: #1e1e1e;">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Cinema XYZ. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Inclusão do script.js no final do body -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>

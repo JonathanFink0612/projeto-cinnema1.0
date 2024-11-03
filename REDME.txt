@@ -1,0 +1,59 @@
+Projeto: Sistema de Gerenciamento de Cinema
+Este projeto é um sistema de gerenciamento de um cinema, permitindo o registro e a visualização de salas, filmes e sessões. Os dados são armazenados no localStorage do navegador, o que possibilita a persistência das informações entre as recargas da página.
+
+Estrutura do Projeto
+Declaração dos Arrays
+Salas: Contém informações sobre as salas disponíveis, incluindo nome, capacidade, localização e número de assentos disponíveis.
+Filmes: Armazena detalhes dos filmes, como título, gênero e duração.
+Sessões: Contém as informações sobre as sessões programadas, ligando cada sala a um filme específico em uma data e hora determinada.
+Funcionalidades
+Carregar Dados:
+
+Ao iniciar o aplicativo, os dados previamente salvos no localStorage são carregados, permitindo que o sistema funcione de forma contínua.
+Gerenciamento de Usuários:
+
+Possui um sistema de cadastro e login, onde diferentes funções são atribuídas a usuários (admin, funcionário, usuário comum).
+Usuários logados são exibidos na interface.
+Cadastro de Salas, Filmes e Sessões:
+
+Permite que os administradores cadastrem novas salas, filmes e sessões através de formulários.
+Os dados inseridos são salvos no localStorage.
+Estilo
+Tailwind CSS: Utilizado para estilizar todos os arquivos HTML, proporcionando um design responsivo e moderno, facilitando a customização dos componentes e layout da interface do usuário.
+Passos para Criar o Projeto
+Configuração Inicial:
+
+Criar os arrays de salas, filmes e sessoes com informações iniciais.
+Implementação de Funções:
+
+Criar funções para:
+Carregar dados do localStorage.
+Salvar dados no localStorage.
+Cadastrar e logar usuários.
+Exibir mensagens ao usuário.
+Atualizar listas na interface (salas, filmes, sessões).
+Estruturar a Interface do Usuário:
+
+Criar formulários para cadastro e login de usuários.
+Criar formulários para adicionar salas, filmes e sessões.
+Exibir listas atualizadas de salas, filmes e sessões na página.
+Estilização com Tailwind CSS:
+
+Aplicar classes do Tailwind CSS em todos os elementos HTML para garantir uma aparência atraente e responsiva.
+Gerenciamento de Eventos:
+
+Adicionar event listeners para capturar eventos de envio de formulários e atualizar as listas conforme necessário.
+Tecnologias Utilizadas
+HTML/CSS: Para a estrutura e estilo da interface do usuário.
+JavaScript: Para a lógica do aplicativo e manipulação de dados.
+localStorage: Para persistência de dados entre recargas de página.
+Tailwind CSS: Para um design responsivo e estilização moderna.
+
+
+
+Nomes da equipe:
+augusto rodrigues
+gustavo santos
+jonathan fink
+thiago messias 
+
